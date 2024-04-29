@@ -1,11 +1,26 @@
 from django.http import HttpResponse
+import datetime
 
+# Definición de la vista:
 def saludo(request):
     texto = """
     <html>
     <body>
-    <h1>Hola mundo</h1>
+    <h1> Hola mundo </h1>
     </body>
     </html>
     """
     return HttpResponse(texto)
+
+# Definición de una vista para contenido dinámico:
+def fecha(request):
+    miFecha = datetime.datetime.now()
+    
+    texto2 = """
+    <html>
+    <body>
+    <h2> Fecha y hora actual: </h2> %s
+    </body>
+    </html>
+    """ % miFecha
+    return HttpResponse(texto2)

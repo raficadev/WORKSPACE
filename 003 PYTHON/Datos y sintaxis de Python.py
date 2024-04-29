@@ -124,8 +124,8 @@ s_texto2 = str(n_numero6)
 # STRING
 
 # Podemos concatenar textos utilizando + o , con la siguiente diferencia:
-print("Hola" + "mundo.")     # = Holamundo. + no deja espacio.
-print("Hola" , "mundo.")     # = Hola mundo. , deja espacio.
+print("Hola" + "mundo")     # = Holamundo + no deja espacio.
+print("Hola" , "mundo")     # = Hola mundo , deja espacio.
 
 # Concatenación y multiplicación de strings:
 a = "uno"

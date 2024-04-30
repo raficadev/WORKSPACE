@@ -24,3 +24,18 @@ def fecha(request):
     </html>
     """ % miFecha
     return HttpResponse(texto2)
+
+# Definición de una vista para calcular la edad en un año determinado:
+def calcEdad(request, year):
+    edadActual = 29
+    periodo = year - 2024
+    edadFutura = edadActual + periodo
+    documento = """
+    <html>
+    <body>
+    <h2> En el año %s tendrás %s años. </h2>
+    </body>
+    </html>
+    """ %(year, edadFutura)
+    
+    return HttpResponse(documento)

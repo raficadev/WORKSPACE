@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', saludo),
     path('fecha/', fecha),
-    path('calcEdad/<int:year>', calcEdad),
+    path('calcEdad/<int:edadActual>/<int:year>', calcEdad),
 ]

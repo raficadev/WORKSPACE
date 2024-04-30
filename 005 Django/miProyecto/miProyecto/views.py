@@ -25,9 +25,8 @@ def fecha(request):
     """ % miFecha
     return HttpResponse(texto2)
 
-# Definición de una vista para calcular la edad en un año determinado:
-def calcEdad(request, year):
-    edadActual = 29
+# Definición de una vista para calcular la edad que tendremos en un año determinado:
+def calcEdad(request, edadActual, year):
     periodo = year - 2024
     edadFutura = edadActual + periodo
     documento = """
